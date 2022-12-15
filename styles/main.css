@@ -1,0 +1,102 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: 'Youtan';
+    src: url(./fonts/circe-light-webfont.woff);
+    src: url(./fonts/circe-regular-webfont.woff);
+}
+
+
+:root { /*css переменные*/
+    --container-width: 1270px;  
+    --container-padding: 15px;
+    --secondary: rgba(15, 31, 28, 0.5);
+    --orange: #FF7C4E
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F6F6;
+    color: #0F1F1C;
+}
+
+.none {
+    display: none !important;/*для скрытия элементов*/
+}
+
+.container {
+    max-width: var(--container-width);/*Используем переменные, так удобно если надо поменять значение то только в одном месте*/
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/*header__top*/
+.header {
+    background: #969e91;
+    color: white;
+}
+
+.header__top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+
+
+    font-size: 22px;
+    font-family: 'Youtan';
+    font-weight: normal;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 55px;
+}
+
+.nav__list li {
+    cursor: pointer;
+}
+
+.logo{
+    max-width: 300px;
+    height: auto;
+    
+}
+
+.nav__info {
+    display: flex;
+    column-gap: 55px;
+}
+
+.nav__basket img {
+    width: 25px;
+}
+
+/* Header-carousel */
+
+.container-carousel {
+    max-width: 100%;
+}
+
+.owl-carousel {
+
+}
+
+.slider_item {
+    width: 100%;
+    max-height: 750px;
+    object-fit: cover; /*для корректного масштабирования */
+    /* border-radius: 35px; */
+
+    transition: 0.2s ease-in; /*Для плавности */
+}
+
+.owl-item .active .center {
+    width: 100%;
+}
+
