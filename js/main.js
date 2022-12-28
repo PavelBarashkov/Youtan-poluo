@@ -8,7 +8,7 @@ $(document).ready(function(){
 owl.owlCarousel({
     center: true,
     loop: true,/*Чтоб зациклить */
-    // margin: 20,
+    // margin: 10,
     autoplay: true,
     autoplayTimeout: 6500,
     autoplayHoverPause: false,
@@ -26,6 +26,17 @@ owl.owlCarousel({
         },
 }})
 
+// Nav icon
+
+const btnNav = document.querySelector('.nav__toggle');
+const nav = document.querySelector('.nav');
+const menuIcon = document.querySelector('.menu-icon');
+
+btnNav.onclick = function() {
+  nav.classList.toggle('nav--mobile');
+  menuIcon.classList.toggle('menu-icon--active');
+  document.body.classList.toggle('no-scroll');
+}
 
 
 $('.new-slider').owlCarousel({
@@ -61,34 +72,33 @@ $(document).ready(function(){
 
   //--------------------------------------
 
-let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
-let popup = document.querySelector('.popup'); // Само окно
-let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
-let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
+// let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+// let popup = document.querySelector('.popup'); // Само окно
+// let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+// let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
 
-openPopupButtons.forEach((button) => { // Перебираем все кнопки
-  button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
-      e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-      popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-      popup.classList.add('active'); // И для самого окна
-  })
-})
+// openPopupButtons.forEach((button) => { // Перебираем все кнопки
+//   button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+//       e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+//       popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+//       popup.classList.add('active'); // И для самого окна
+//   })
+// })
 
-closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
-  popupBg.classList.remove('active'); // Убираем активный класс с фона
-  popup.classList.remove('active'); // И с окна
-  console.log('закрыли')
-});
+// closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
+//   popupBg.classList.remove('active'); // Убираем активный класс с фона
+//   popup.classList.remove('active'); // И с окна
+//   console.log('закрыли')
+// });
 
 
-document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-  if(e.target === popupBg) { // Если цель клика - фот, то:
-      popupBg.classList.remove('active'); // Убираем активный класс с фона
-      popup.classList.remove('active'); // И с окна
-  }
-  console.log('закрыли 2')
-});
-
+// document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+//   if(e.target === popupBg) { // Если цель клика - фот, то:
+//       popupBg.classList.remove('active'); // Убираем активный класс с фона
+//       popup.classList.remove('active'); // И с окна
+//   }
+//   console.log('закрыли 2')
+// });
 
 
 

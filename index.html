@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./card.html">
     <title>Youtan poluo</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <nav class="nav">
 
                     <ul class="nav__list">
-                        <li><a href="#!!"></a>Магазин</li>
+                        <li><a href="#!"></a>Магазин</li>
                         <li><a href="#!"></a>О бренде</li>
                         <li><a href="#!"></a>Контакты</li>
                     </ul>
@@ -34,6 +35,11 @@
                     <ul class="nav__basket">
                         <li><a> <img src="./image/nav_header/icons8-сумка-для-покупок-50 (1).png" alt=""> </a></li>
                     </ul>
+                    <button type="button" class="nav__toggle">
+                        <div class="menu-icon-wrapper">
+                            <div class="menu-icon"></div>
+                        </div>
+                    </button>
                 </nav>
             </div>
         </div>  
@@ -54,14 +60,14 @@
             </button>
         </div>
 
-        <section class="preview-collection ">
+        <section class="preview-collection none">
             <div class="container">
                 <div class="preview-collection__title">
                     <h1>Коллекия Youtan poluo</h1>
                 </div>
                 <div class="preview-collection__row">
                     <div class="product-card ">
-                        <a href="#!" class="open-popup">
+                        <a href="#!">
                         <div class="product-card__preview">
                             <img class="image first" src="./image/preview_collection/21_136.jpg" alt="">
                             <img class="image second" src="./image/preview_collection/21_135.jpg" alt="">
@@ -70,72 +76,7 @@
                         <div class="product-card__price">9&nbsp;000&nbsp;&#8381;</div>
                         </a>
                     
-                            <div class="popup__bg"> 
-                                <form class="popup container">
-                                    <img src="./image/preview_collection/4115230-cancel-close-cross-delete_114048.svg" class="close-popup">
-                                <div class="popup__row">
-                                        <div class="popup__slider">
-                                            <div class="new-slider owl-theme">
-                                                <div class="new__item "> <img class="new__slider__item" src="./image/Header_slider/2021_134.png" alt="slider item"></div>
-                                                <div class="new__item" data-hash="zero"><img class="new__slider__item"  src="./image/Header_slider/2021_101.png" alt="slider item"></div>
-                                                <div class="new__item" data-hash="lol"><img class="new__slider__item" src="./image/Header_slider/2021_134.png" alt="slider item"></div>
-                                                <div class="new__item"><img class="new__slider__item" src="./image/Header_slider/2021_101.png" alt="slider item"></div>
-                                            </div>
-                                        
-                                        <div class="item-slider-preview">
-                                            <a href="#zero"><img class="xx" src="./image/Header_slider/2021_101.png" alt="slider item"></a>
-                                            <a href="#lol"><img class="xx" src="./image/Header_slider/2021_134.png" alt="slider item"></a>
-                                         </div>   
-                                        </div>
-                                        <div class="product-info">
-                                        
-                                            <div class="product-info__title">
-                                                <h2>Костюм из оверсайз кимоно</h2>
-                                            </div>
-
-                                            <div class="product-info__price">
-                                                <span>9&nbsp;000&nbsp;&#8381;</span>
-                                            </div>
-
-                                            <form class="product-info__size">
-                                                <span>Размер</span>
-                                                <select id="country" name="country">
-                                                    <option value="xs">XS</option>
-                                                    <option value="s">S</option>
-                                                    <option value="m">M</option>
-                                                    <option value="m">L</option>
-                                                </select>
-                                            </form>
-
-                                            <button class="btn">
-                                                купить
-                                            </button>
-
-                                        <div class="product-info__text">
-                                            <div class="info__title">
-                                                Свитшот выполнен из высококачественного плотного хлопка.
-                                                Модель имеет oversized посадку, круглый ворот, вышивка на груди.
-                                            </div>
-                                            
-                                            <div class="info__composition">
-                                                Состав:<br>
-                                                100%хлопок
-                                            </div>
-                                            <div class="info__recommendations">
-                                                Рекомендации по уходу: бережная стирка 30 градусов.
-                                                Гладить с изнаночной стороны.
-                                            </div>
-                                            <div class="info__recommendations-size">
-                                                Размерная сетка:<br>
-                                                S-M ( длина изделия 65см, объем в груди 154см, длина рукава от горловины 84см)<br>
-                                                L-XL ( длина изделия 75см, объем в груди 154см, длина рукава от горловины 84см)<br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </form>
-                            </div>  
-                           
+                            
                     </div>
 
                     <div class="product-card ">
@@ -219,7 +160,7 @@
                     </div>
 
                     <div class="product-card product-card--botton">
-                        <div class="product-card--shop"><a href="#!">Магазин</a></div>
+                        <div id="product-card--shop" class="product-card--shop"><a href="./card.html">Магазин</a></div>
                     </div>
 
 
@@ -227,7 +168,7 @@
             </div>
         </section>
 
-        <section class="brand-info ">
+        <section class="brand-info none">
             <div class="container">
                 <div class="brand-info__card">
                     <div class="target-brand">
@@ -274,7 +215,7 @@
                 </div>
             </div>
         </section>
-        <section class="faq ">
+        <section class="faq none">
             <div class="container">
                 <div class="faq__title">
                     <h2>FAQ</h2>
@@ -348,7 +289,7 @@
         </section>
     </main>
         
-    <footer class="footer ">
+    <footer class="footer none">
         <div class="container">
             <div class="footer__row">
                 <nav class="footer__nav">
